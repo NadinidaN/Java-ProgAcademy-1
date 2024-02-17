@@ -1,0 +1,19 @@
+import net.thauvin.erik.crypto.CryptoException;
+import net.thauvin.erik.crypto.CryptoPrice;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws IOException, CryptoException {
+
+        var scanner = new Scanner(System.in);
+        double res;
+        System.out.println("What is the speed of your car: ");
+        double num = scanner.nextDouble();
+        System.out.println("Your travel time in hours: \n");
+        double time = scanner.nextDouble();
+        res = num * time;
+        System.out.println("In the time you specified you will travel: \n" + res + "\f km");
+    }
+}
